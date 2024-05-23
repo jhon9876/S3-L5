@@ -380,22 +380,49 @@ const movies = [
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
+// const countMovies = (oggetto) => oggetto.length;
 
+// console.log(countMovies(movies));
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
-*/
-
+// */
+// const onlyTheYears = movies.map((anno) => anno.Year);
+// console.log(onlyTheYears);
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
+// const onlyInLastMillennium = movies.filter(
+//   (oggetto) => oggetto.Year >= 1900 && oggetto.Year <= 1999
+// );
+// console.log(onlyInLastMillennium);
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
 
+// const sumAllTheYears = function (array) {
+//   let sum = 0;
+//   for (let index = 0; index < array.length; index++) {
+//     sum += Number(array[index].Year);
+//   }
+//   return sum;
+// };
+
+// console.log(sumAllTheYears(movies));
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
+// const searchByTitle = function (stringa, array) {
+//   const new_array = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i].Title === array[i].Title.IndexOf(stringa)) {
+//       new_array.push(array[i]);
+//     }
+//   }
+//   return new_array;
+// };
+
+// console.log(searchByTitle("Avengers", movies));
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
@@ -411,31 +438,78 @@ const movies = [
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
+// const selezionaContainer = function (event) {
+//   const divElement = document.getElementById("container");
+//   return divElement;
+// };
 
+//console.log(selezionaContainer());
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+// const selezionaTd = function () {
+//   const tdElement = document.querySelectorAll("td");
+//   return tdElement;
+// };
+// const x = selezionaTd();
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
+// for (let i = 0; i < x.length; i++) {
+//   console.log(x[i].textContent);
+// }
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
-*/
+// */
+// const coloreRosso = function () {
+//   const aElement = document.getElementsByTagName("a");
+//   console.log(aElement);
+//   for (let i = 0; i < aElement.length; i++) {
+//     aElement[i].classList.add("coloreRosso");
+//   }
+// };
 
+//coloreRosso();
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
-*/
+// */
+// const nuovoElemento = function () {
+//   const ulElement = document.getElementById("myList");
+//   console.log(ulElement);
+//   const newLiElement = document.createElement("li");
+//   newLiElement.innerText = "4";
+//   ulElement.appendChild(newLiElement);
 
+// };
+
+// nuovoElemento();
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
+// const svuotaLista = function () {
+//   const ulElement = document.querySelectorAll("#myList li");
+//   console.log(ulElement);
+//   for (let i = 0; i < ulElement.length; i++) {
+//     ulElement[i].innerText = "";
+//   }
+// };
+
+// svuotaLista();
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
+// const addClass = function () {
+//   const trElement = document.querySelectorAll("tr");
+//   console.log(trElement);
+//   for (let i = 0; i < trElement.length; i++) {
+//     trElement[i].classList.add("test");
+//   }
+// };
+// addClass();
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
